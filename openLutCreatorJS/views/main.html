@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/lutCreator.js"></script>
+</head>
+
+<div class="topBar">
+    <span class="title">OpenLutGenerator</span>
+    <span id="close">&#xE8BB;</span>
+    <span id="min">&#xE921;</span>
+</div>
+<body>
+    <div class="main">
+        <img class="logo">
+        <h1>3D Lut Generator by one click <span class="version">v0.1</span></h1>
+        <p class="description">Export a HALD, edit with your favorite Image editor and export the adjustment in a LUT
+            .cube file.</p>
+        <p><strong>LUT max size</strong> 96x96x96 | <strong>Format</strong> .CUBE | <strong>Supported formats</strong>
+            PNG/JPG</p>
+        <div class="buttons">
+            <input type="button" value="Export HALD" onclick="createHald(25)" download="hald.png" href="">
+            <input type="button" value="Convert to .CUBE" onclick="exportCube(25)">
+        </div>
+            <p>Code with ❤️ by @SirSerch</p>
+
+    </div>
+    <script>
+        require('../renderer.js');
+      </script>
+</body>
+
+</html>
