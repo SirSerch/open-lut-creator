@@ -50,8 +50,8 @@ if __name__ == "__main__":
                     ui.progressBar.setProperty("value", progress)
                     r += 1
             hald.save(output+"/Neutral.png")
-            ui.progressBar.setProperty("value", 100)
-            ui.progressBar.setEnabled(False)
+            ui.progressBar.setProperty("value", 0)
+            ui.progressBar.setEnabled(true)
             ui.progressBar.setFormat("Creating Hald...Complete")
 
         def generateCube(self, file):
@@ -83,7 +83,7 @@ if __name__ == "__main__":
                         progress = round((y * 100) / image.height)
                         ui.progressBar.setProperty("value", progress)
                 cube.close()
-                ui.progressBar.setProperty("value", 100)
+                ui.progressBar.setProperty("value", 0)
                 ui.progressBar.setEnabled(False)
                 ui.progressBar.setFormat("Converting to .cube...Complete")
             else:
@@ -92,7 +92,7 @@ if __name__ == "__main__":
 
  
 
-    hald = Hald(120)
+    hald = Hald(49)
 
     def create():
         options = QFileDialog.Options()
