@@ -24,7 +24,7 @@
   </property>
   <property name="font">
    <font>
-    <family>DejaVu Sans</family>
+    <family>Arial</family>
     <weight>50</weight>
     <bold>false</bold>
    </font>
@@ -67,7 +67,10 @@
        </property>
        <property name="font">
         <font>
+         <family>Arial</family>
          <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
        </property>
        <property name="text">
@@ -101,7 +104,7 @@
        </property>
        <property name="font">
         <font>
-         <family>DejaVu Sans</family>
+         <family>Arial</family>
          <weight>50</weight>
          <bold>false</bold>
         </font>
@@ -130,14 +133,14 @@
         <widget class="QRadioButton" name="lowRadius">
          <property name="font">
           <font>
-           <family>DejaVu Sans</family>
+           <family>Arial</family>
            <pointsize>10</pointsize>
            <weight>50</weight>
            <bold>false</bold>
           </font>
          </property>
          <property name="text">
-          <string>LOW(25)</string>
+          <string>LOW (25)</string>
          </property>
          <property name="checked">
           <bool>true</bool>
@@ -148,14 +151,14 @@
         <widget class="QRadioButton" name="mediumRadius">
          <property name="font">
           <font>
-           <family>DejaVu Sans</family>
+           <family>Arial</family>
            <pointsize>10</pointsize>
            <weight>50</weight>
            <bold>false</bold>
           </font>
          </property>
          <property name="text">
-          <string>MEDIUM(64)</string>
+          <string>MEDIUM (64)</string>
          </property>
         </widget>
        </item>
@@ -163,14 +166,14 @@
         <widget class="QRadioButton" name="highRadius">
          <property name="font">
           <font>
-           <family>DejaVu Sans</family>
+           <family>Arial</family>
            <pointsize>10</pointsize>
            <weight>50</weight>
            <bold>false</bold>
           </font>
          </property>
          <property name="text">
-          <string>HIGH(144)</string>
+          <string>HIGH (144)</string>
          </property>
         </widget>
        </item>
@@ -206,6 +209,14 @@
            <height>50</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="text">
           <string>Generate HALD</string>
          </property>
@@ -231,6 +242,14 @@
            <width>190</width>
            <height>50</height>
           </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
          </property>
          <property name="text">
           <string>Convert to .CUBE</string>
@@ -258,7 +277,7 @@
          </property>
          <property name="font">
           <font>
-           <family>DejaVu Sans</family>
+           <family>Arial</family>
            <pointsize>10</pointsize>
            <weight>50</weight>
            <bold>false</bold>
@@ -266,6 +285,9 @@
          </property>
          <property name="value">
           <number>0</number>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
          </property>
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
@@ -293,7 +315,10 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>6</pointsize>
+         <family>Arial</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
        </property>
        <property name="text">

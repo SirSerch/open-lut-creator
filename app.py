@@ -1,13 +1,25 @@
-import sys
+import sys, os
 import assets.assets
 from PIL import Image
 from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog
 from PyQt5 import uic
 
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+        return os.path.join(base_path, relative_path)
+    except Exception:
+        base_path = os.path.abspath(".")
+        return os.path.join(base_path, "assets/ui/"+relative_path)
+
+mainUI = resource_path("appUI.ui")
+
 class App(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
-        uic.loadUi("assets/ui/appUI.ui", self)
+        uic.loadUi(mainUI, self)
 
         self.generateHald.clicked.connect(self.generate)
         self.convertCube.clicked.connect(self.convert)
