@@ -1,7 +1,7 @@
 import sys
 import assets.assets
 from PIL import Image
-from PyQt5.QtWidgets import QApplication, QDialog, QMainWindow, QFileDialog
+from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog
 from PyQt5 import uic
 
 class App(QMainWindow):
