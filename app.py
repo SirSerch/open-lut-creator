@@ -108,8 +108,8 @@ class App(QMainWindow):
             cube.close()
             self.setProgressBar(0, "Process Complete")
         else:
-            ui.progressBar.setEnabled(True)
-            ui.progressBar.setFormat("ERROR: You don't select a directory to save file")
+            self.progressBar.setEnabled(True)
+            self.progressBar.setFormat("ERROR: You don't select a directory to save file")
 
 
 app = QApplication(sys.argv)
